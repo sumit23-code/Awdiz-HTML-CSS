@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-9</title>
+    <style>
+        .blackbox {
+            position: relative;
+            z-index: 3;
+            background-color: black;
+            top: 45px;
+            left: 45px;
+            height: 280px;
+            width: 280px;
+            border: 1px white;
+        }
+
+        .redbox {
+            position: absolute;
+            z-index: 2;
+            background-color: red;
+            height: 350px;
+            width: 350px;
+            top: 20px;
+            left: 20px;
+        }
+
+        .yellowbox {
+            position: absolute;
+            z-index: 1;
+            background-color: yellow;
+            top: 0px;
+            left: 0px;
+            height: 400px;
+            width: 400px;
+        }
+
+        .buttonStyle {
+            background-color: darksalmon;
+            color: chartreuse;
+            cursor: pointer;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+            background: linear-gradient(to left, green, red)
+            
+        }
+
+        .buttonStyle:hover {
+            background-color: wheat;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div style="display: 140px;">
+        <div style="color: white; text-align: center; font-size: 30px;" class="blackbox">Absolute</div>
+        <div style="color: white;" class="redbox">Relative</div>
+        <div style="color: black;" class="yellowbox">yellowbox</div>
+    </div> -->
+
+    <img src="https://wallpapers.com/images/hd/kenya-safari-at-sunset-x7z8yfbg9vnngxwa.jpg"
+        style="height: 200px; width: 200px;border: 1px solid black; border-radius: 100px;" /><hr/>
+
+
+    <button class="buttonStyle">Submit</button>
+</body>
+
+</html>
