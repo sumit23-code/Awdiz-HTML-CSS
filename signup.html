@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        #fullscreen {
+            /* border: 2px solid green; */
+            width: 100%;
+            height: 1500px;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+        }
+
+        #body {
+            /* border: 2px solid red; */
+            width: 30%;
+            height: 800px;
+            margin: 30px 0px;
+
+
+        }
+
+        #Logo {
+            display: flex;
+
+        }
+
+        #nikelogo {
+            /* border: 1px solid black; */
+            margin: 10px 0px;
+            width: 60px;
+            height: 28px;
+        }
+
+        #jordenlogo {
+            /* border: 1px solid black; */
+            margin: 5px 0px;
+            width: 60px;
+            height: 28px;
+        }
+
+        #email {
+            /* border: 2px solid blue; */
+            font-family: "Roboto", sans-serif;
+            font-size: 30px;
+            margin: 10px 0px;
+        }
+
+        #OTP {
+            font-size: 17px;
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        #Name {
+            display: flex;
+            /* border: 2px solid green; */
+            /* justify-content: flex-start; */
+            width: 100%;
+            height: 90px;
+            /* justify-content: space-between; */
+
+        }
+
+        #dateofbirth {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 320px) and (max-width: 750px) {}
+    </style>
+</head>
+
+<body>
+    <div id="fullscreen">
+        <div id="body">
+            <div id="Logo">
+                <div id="nikelogo">
+                    <img style="width: 60px; height: 28px;"
+                        src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo-1971-present.jpg" />
+                </div>
+                <div id="jordenlogo">
+                    <img style="width: 60px;height: 35px;"
+                        src="https://logos-world.net/wp-content/uploads/2020/04/Air-Jordan-Logo.png" />
+                </div>
+            </div>
+            <div id="email">
+                Now let's make you a Nike Member.
+            </div>
+            <div id="OTP">
+                We've sent a code
+            </div>
+            <input
+                style="width: 95%; height: 55px; margin: 30px 0px; border-radius: 8px; font-size: 17px; padding: 0px 10px; border: 1px solid black;"
+                type="text" placeholder="Code*">
+            <div id="Name">
+
+                <input
+                    style="margin-right: 11px;padding-left: 10px; width: 45%; height: 55px; border-radius: 8px; font-size: 17px; border: 1px solid black;"
+                    type="text" placeholder="First Name*">
+                <input
+                    style="width: 46%; height: 55px; border-radius: 8px; font-size: 17px; border: 1px solid black;padding-left: 10px;"
+                    type="text" placeholder="Surname*">
+
+            </div>
+
+            <input
+                style="margin-top: 0%;width: 97%; height: 55px;padding-left: 10px;;margin-bottom: 20px; border-radius: 8px; font-size: 17px;border: 1px solid black;"
+                type="text" placeholder="Password*">
+            <p style="margin-left: 9px;font-family: Roboto" , sans-serif;">Date of Birth</p>
+            <div id="dateofbirth">
+                <input
+                    style="width: 24%; height: 55px;padding-left: 8px; border-radius: 8px; font-size: 17px; border: 1px solid black;"
+                    type="text" placeholder="Day*">
+                <input
+                    style="width: 24%; height: 55px;padding-left: 8px; border-radius: 8px; font-size: 17px; border: 1px solid black;"
+                    type="text" placeholder="Month*">
+                <input
+                    style="width: 40%; height: 55px;padding-left: 8px; border-radius: 8px; font-size: 17px; border: 1px solid black;"
+                    type="text" placeholder="Year*">
+            </div>
+            <p style="font-size: 12px;color: gray;margin-top: 2px;margin-left: 9px;font-family: Roboto" , sans-serif;">
+                Get a Nike Member Reward on your birthday.</p>
+            </br>
+            <label>
+                <input style="font-family:Roboto", sans-serif; type="checkbox" name="Accept" />Sign up for emails to
+                get updates from Nike on
+                products, offers and your Member benefits.
+            </label>
+            </br>
+            </br>
+            <label>
+                <input type="checkbox" name="accept" />I agree to Nike's<button
+                    style=" border: none; cursor: pointer; background-color: white;font-weight: bold; font-size: 15px;"><u>Privacy
+                        Policy</u></button>and<button
+                    style=" border: none; cursor: pointer; background-color: white;font-weight: bold; font-size: 15px;"><u>Terms of use</u></button>
+            </label>
+
+        </div>
+    </div>
+</body>
+
+</html>
