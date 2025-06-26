@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike. Just Do It. Nike In</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+        #screen {
+            /* height: 100vh; */
+            width: 100%;
+            /* border: 2px solid green; */
+        }
+
+        #subHeading {
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 30px;
+            background-color: rgb(245, 245, 245);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #subHeadleft {
+            /* border: 1px solid black; */
+            width: 3%;
+            margin-left: 2%;
+
+        }
+
+        #subHeadright {
+            /* border: 1px solid black; */
+            width: 16%;
+            margin-right: 2%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #storecnt {
+            /* border: 1px solid red; */
+            width: 30%;
+            font-size: 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        #helpcnt {
+            /* border: 1px solid red; */
+            width: 20%;
+            font-size: 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        #profile {
+            /* border: 1px solid red; */
+            width: 30%;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        #heading {
+            /* border: 2px solid black; */
+            height: 55px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #headLeft {
+            /* border: 1px solid blue; */
+            width: 7%;
+            margin-left: 2%;
+            display: flex;
+            align-items: center;
+        }
+
+        #headMiddle {
+            /* border: 1px solid blue; */
+            width: 30%;
+            margin-left: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #headRight {
+            /* border: 1px solid rgb(255, 0, 0); */
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #searchBtn {
+            /* border: 1px solid yellow; */
+            background-color: rgb(245, 245, 245);
+            width: 60%;
+            display: flex;
+            height: 35px;
+            border-radius: 20px;
+
+        }
+
+        #searchIcon {
+            /* border: 2px solid darkblue; */
+            display: flex;
+
+
+        }
+
+        #favoriteBtn {
+            /* border: 1px solid black; */
+            width: 10%;
+        }
+
+        #bagBtn {
+            /* border: 1px solid black; */
+            width: 10%;
+            margin-right: 10%;
+        }
+
+        #banner {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(245, 245, 245);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 10px; */
+            font-size: 22px;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            cursor: pointer;
+        }
+
+        #bannerimg {
+            display: flex;
+            justify-content: center;
+        }
+
+        #collectioncnt {
+            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            margin: 0%;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #collectionbtn {
+            font-size: 66px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            line-height: 120%;
+            /* font-style: normal; */
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        #shopbtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        #latestHead {
+            font-size: 25px;
+            margin-left: 2%;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #latestProduct {
+            /* border: 2px solid green; */
+            height: 500px;
+            width: 96%;
+            display: flex;
+            margin: 0px 2%;
+            justify-content: space-between;
+
+        }
+
+        #product1 {
+            /* border: 2px solid black; */
+            width: 49.5%;
+            height: 460px;
+
+
+        }
+
+        #product2 {
+            /* border: 2px solid black; */
+            width: 49.5%;
+            height: 460px;
+
+        }
+
+        #feature {
+            width: 90%;
+            height: 500px;
+            /* border: 2px solid red; */
+            display: flex;
+            margin-left: 5%;
+            justify-content: space-between;
+        }
+
+        #featureprd {
+            /* border: 1px solid blue; */
+            width: 32.5%;
+        }
+
+        #offercnt {
+            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #offerbtn {
+            font-size: 66px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            line-height: 120%;
+            /* font-style: normal; */
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        #bottomcnt {
+            /* border: 2px solid purple; */
+            display: flex;
+            height: 350px;
+            margin-left: 2%;
+        }
+
+        #bottom {
+            /* border: 1px solid black; */
+            width: 25%;
+        }
+
+        #bottombtn {
+            color: grey;
+            line-height: 30px;
+        }
+
+        #offershopbtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            margin-bottom: 100px;
+        }
+        #footer{
+            /* border: 2px solid green; */
+            height: 50px;
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="subHeading">
+            <div id="subHeadleft"><img style="width: 30px;"
+                    src="https://logos-world.net/wp-content/uploads/2020/04/Air-Jordan-Logo.png" /></div>
+            <div id="subHeadright">
+                <div id="storecnt">Find a Store</div>
+                <div id="helpcnt">Help</div>
+                <div id="profile">Profile<img style="width: 25px;"
+                        src="./person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" /></div>
+
+            </div>
+
+        </div>
+        <div id="heading">
+            <div id="headLeft"><img style="width: 50px;"
+                    src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo-1971-present.jpg" /></div>
+            <div id="headMiddle">
+                <div>New & Featured</div>
+                <div>Men</div>
+                <div>Women</div>
+                <div>Kids</div>
+                <div>Sale</div>
+                <div>SNKRS</div>
+            </div>
+            <div id="headRight">
+                <div id="searchBtn">
+                    <div id="searchIcon"><img style="width: 25px;"
+                            src="./search_24dp_000000_FILL0_wght400_GRAD0_opsz40.svg" />
+                        <input
+                            style="width: 90%;border: none;outline: none;background-color: rgb(245, 245, 245);border-top-right-radius: 20px;border-bottom-right-radius: 20px;"
+                            type="search" placeholder="Search">
+                    </div>
+                </div>
+                <div id="favoriteBtn"><img src="../Day-11/favorite_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" /></div>
+                <div id="bagBtn"><img src="../Day-11/shopping_bag_24dp_000000_FILL1_wght100_GRAD0_opsz24.svg" /></div>
+            </div>
+        </div>
+        <div id="banner">
+            <h5>New Styles On Sale: Up To 40% Off <br><u>Shop All Ours New Markdowns</u></h5>
+        </div>
+        <div id="bannerimg"><img style="width: 95%; margin-bottom: 35px;" src="./nike-just-do-it.jpg" /></div>
+        <div id="collectioncnt">Breaking4
+        </div>
+        <div id="collectionbtn">
+            <h3 style="margin: 0%;">FAITH KIPYEGON<br>COLLECTION</h3>
+        </div>
+        <div style="display: flex; justify-content: center;text-align: center;align-items: center;font-size: 18px;font-family:Roboto"
+            , sans-serif;">Inspired bu the
+            woman daring to break 4-minute mile barrier, <br>her collection features running shoes and apperal built for
+            speed.</div>
+        <div id="shopbtn">
+            <button style="background-color: black;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding:10px 20px;
+            border-radius: 70px;
+            font-weight: bold;
+            font-size: 15px;">Shop</button>
+        </div>
+        <div id="latestHead">
+            <p>The Latest</p>
+        </div>
+        <div id="latestProduct">
+            <div id="product1"><img style="width: 100%; height: 100%;"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_853,c_limit/484f2484-1e83-48f8-97e5-2c301bc5bf2e/nike-just-do-it.png" />
+            </div>
+            <div id="product2"><img style="width: 100%; height: 100%;"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_853,c_limit/4322b53e-360a-4373-97f5-9ae301aa86c2/nike-just-do-it.png" />
+            </div>
+        </div>
+        <p style="font-size: 25px;margin-left: 5%;font-family:Roboto" , sans-serif;">Featured</p>
+        <div id="feature">
+            <div id="featureprd"><img style="width: 100%;height: 100%;"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_594,c_limit/0f658abe-551e-4e1d-b776-76812388a48a/nike-just-do-it.png" />
+                <p style="font-size:20px;font-weight:450;font-family:Roboto" , sans-serif;">Cool For The Summer</p>
+            </div>
+            <div id="featureprd"><img style="width: 100%;height: 100%;"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_594,c_limit/16c1254b-1f6c-4bdd-9263-4fe3e80128bb/image.png" />
+                <p style="font-size:20px;font-weight:450;font-family:Roboto" , sans-serif;">Gear For Every Rep</p>
+            </div>
+            <div id="featureprd"><img style="width: 100%;height: 100%;"
+                    src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_594,c_limit/0c8b5e9a-1df0-40f8-9dff-0f58eb134856/nike-just-do-it.png" />
+                <p style="font-size:20px;font-weight:450;font-family:Roboto" , sans-serif;">Kid's Pegasus 41</p>
+            </div>
+        </div>
+        <div>
+            <p style="margin-left: 2%;margin-top: 10%;font-size: 25px;font-family:Roboto" , sans-serif;">Don't Miss</p>
+            <img style="width: 96%; height: 750px;margin-left: 2%;"
+                src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_1946,c_limit/69fefaad-9ae6-4714-8387-73545727b1f3/nike-just-do-it.png" />
+        </div>
+        <div id="offercnt">Men's Air Jordan Collection
+        </div>
+        <div id="offerbtn">
+            <h3 style="margin: 0%;">SHOW 'EM UP</h3>
+        </div>
+        <div style="display: flex; justify-content: center;text-align: center;align-items: center;font-size: 18px;font-family:Roboto"
+            , sans-serif;">Crafted for your flyest self, the new Air Jordan Collection brings iconic prints and elevated
+            cuts</div>
+        <div id="offershopbtn">
+            <button style="background-color: black;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding:10px 20px;
+            border-radius: 70px;
+            font-weight: bold;
+            font-size: 15px;">Shop</button>
+        </div>
+        <hr style="margin-bottom: 50px;">
+        <div id="bottomcnt">
+            <div id="bottom" style="font-weight: 800;">Resources
+                <div id="bottombtn">Find A Store</div>
+                <div id="bottombtn">Become A Member</div>
+                <div id="bottombtn">Running Shoe Finder</div>
+                <div id="bottombtn">Product Advice</div>
+                <div id="bottombtn">Send Us Feedback</div>
+            </div>
+            <div id="bottom" style="font-weight: 800;">Help
+                <div id="bottombtn">Get Help</div>
+                <div id="bottombtn">Order Status</div>
+                <div id="bottombtn">Delivery</div>
+                <div id="bottombtn">Returns</div>
+                <div id="bottombtn">Payment Options</div>
+                <div id="bottombtn">Contact Us On Nike.com Inquiries</div>
+                <div id="bottombtn">Contact Us On All Other Inquiries</div>
+            </div>
+            <div id="bottom" style="font-weight: 800;">Company
+                <div id="bottombtn">About Nike</div>
+                <div id="bottombtn">News</div>
+                <div id="bottombtn">Careers</div>
+                <div id="bottombtn">Investors</div>
+                <div id="bottombtn">Sustanability</div>
+                <div id="bottombtn">Impact</div>
+                <div id="bottombtn">Report a concern</div>
+            </div>
+        </div>
+        <div id="footer">
+            <div>© 2025 Nike, Inc. All rights reserved</div>
+            <div>Guides</div>
+            <div>Terms of Sale</div>
+            <div>Terms of Use</div>
+            <div>Nike Privacy Policy</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
