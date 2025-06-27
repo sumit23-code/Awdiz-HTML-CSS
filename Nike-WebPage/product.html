@@ -246,30 +246,103 @@
         margin-bottom: 40px;
         font-family: "Roboto", sans-serif;
     }
+
     #bottomcnt {
-            /* border: 2px solid purple; */
-            display: flex;
-            height: 350px;
-            margin-left: 2%;
+        /* border: 2px solid purple; */
+        display: flex;
+        height: 350px;
+        margin-left: 2%;
+    }
+
+    #bottom {
+        /* border: 1px solid black; */
+        width: 25%;
+    }
+
+    #bottombtn {
+        color: grey;
+        line-height: 30px;
+    }
+
+    #footer {
+        /* border: 2px solid green; */
+        height: 50px;
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2%;
+    }
+
+    #productinfomobile {
+        width: 400px;
+        display: none;
+    }
+    #menubtn{
+        display: none;
+    }
+
+    @media (min-width:320px) and (max-width:750px) {
+        #subHeading{
+            width: 620px;
+        }
+        #banner{
+            width: 620px;
+        }
+        #headRight{
+            width: 620px;
+        }
+        
+        #allwear {
+            display: none;
+        }
+
+        #bottomcnt {
+            display: none;
         }
 
         #bottom {
-            /* border: 1px solid black; */
-            width: 25%;
+            display: none;
         }
 
         #bottombtn {
-            color: grey;
-            line-height: 30px;
+            display: none;
+        }
+        #productinfo{
+            display: none;
         }
         #footer{
-            /* border: 2px solid green; */
-            height: 50px;
-            width: 45%;
-            display: flex;
-            justify-content: space-between;
-            margin-left: 2%;
+            display: none;
         }
+        #productinfomobile{
+            display: block;
+        }
+        #headMiddle{
+            display: none;
+        }
+        #storecnt{
+            display: none;
+        }
+        #helpcnt{
+            display: none;
+        }
+        #favoriteBtn{
+            display:none;
+        }
+        #bagBtn{
+            display: none;
+        }
+        #menubtn{
+            display: block;
+        }
+        #searchBtn{
+            display: none;
+        }
+        #headRight{
+            justify-content: right;
+            width: 620px;
+            align-content: end;
+        }
+    }
 </style>
 
 <body>
@@ -308,6 +381,7 @@
                 </div>
                 <div id="favoriteBtn"><img src="../Day-11/favorite_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" /></div>
                 <div id="bagBtn"><img src="../Day-11/shopping_bag_24dp_000000_FILL1_wght100_GRAD0_opsz24.svg" /></div>
+                <div id="menubtn"><img src="./menu_24dp_000000_FILL0_wght400_GRAD0_opsz24 (1).svg"/></div>
             </div>
         </div>
         <div id="banner">
@@ -332,9 +406,91 @@
                             src="https://static.nike.com/a/images/t_default/1dd01323-744d-4ea9-aff2-415d3eb13f7d/AS+M+NP+DF+TIGHT+TOP+SS.png" />
                     </div>
                 </div>
-                <div id="mainwear"><img style="width: 100%;height: 100%;border-radius: 10px;"
+                <div id="mainwear"><img style="width: 490px;height: 100%;border-radius: 10px;"
                         src="./AS+M+NP+DF+TIGHT+TOP+SS.jpg" />
+                    <div id="productinfomobile">
+                        <div style="font-size: 17px;font-weight: 600;color: rgb(211,71,53)">Sustainable Materials</div>
+                        <div style="font-size: 20px;margin-bottom: 2px;">Nike Pro</div>
+                        <div style="color: grey;margin-bottom: 13px;">Men's Dri-FIT Tight Short-Sleeve Fitness Top</div>
+                        <div style="font-weight: 600; margin-bottom: 13px;">MRP : ₹ 1 495.00</div>
+                        <div style="color: grey;margin-bottom: 30px;">Inclusive of all taxes<br>
+                            (Also includes all applicable duties)</div>
+                        <div id="wearprd">
+                            <div id="wearprdimg"><img style="width: 95%; height:70px;border-radius: 5px;"
+                                    src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto,q_auto:eco/28b86da4-52cc-4dd7-b420-f833362f9903/AS+M+NP+DF+TIGHT+TOP+SS.png" />
+                            </div>
+                            <div id="wearprdimg"><img style="width: 95%; height:70px;border-radius: 5px;"
+                                    src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto,q_auto:eco/95092704-4d36-4048-9af3-9052742e1869/AS+M+NP+DF+TIGHT+TOP+SS.png" />
+                            </div>
+                            <div id="wearprdimg"><img style="width: 95%; height:70px;border-radius: 5px;"
+                                    src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto,q_auto:eco/41eadf7c-3ea7-4da7-b45c-961877eef5ef/AS+M+NP+DF+TIGHT+TOP+SS.png" />
+                            </div>
+                            <div id="wearprdimg"><img style="width: 95%; height:70px;border-radius: 5px;"
+                                    src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto,q_auto:eco/6e11fab8-58e2-435b-973d-6d15933a87ad/AS+M+NP+DF+TIGHT+TOP+SS.png" />
+                            </div>
+                            <div id="wearprdimg"><img style="width: 95%; height:70px;border-radius: 5px;"
+                                    src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto,q_auto:eco/92de404d-f21d-4296-91e9-a2cbe7828119/AS+M+NP+DF+TIGHT+TOP+SS.png" />
+                            </div>
+                        </div>
+                        <div id="productsize">
+                            <div>Select Size</div>
+                            <div>Size Guide</div>
+                        </div>
+                        <div id="prdsizecnt">
+                            <div id="sizecontainer">S</div>
+                            <div id="sizecontainer">M</div>
+                            <div id="sizecontainer">L</div>
+                            <div id="sizecontainer">XL</div>
+                            <div id="sizecontainer">2XL</div>
+                        </div>
+                        <div id="shopbtn">
+                            <button style="background-color: black;
+            color: white;
+            width: 110%;
+            height: 60px;
+            cursor: pointer;
+            border: none;
+            padding:10px 20px;
+            border-radius: 70px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;">Add to Bag
+                            </button>
+                            <button style="background-color: white;
+            color: black;
+            width: 110%;
+            height: 60px;
+            cursor: pointer;
+            border: 1px solid grey;
+            padding:0px 0px;
+            border-radius: 70px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            margin-bottom: 30px;">Favorite <img style="height: 26px;"
+                                    src="../Day-11/favorite_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" />
+                            </button>
+                        </div>
+                        <div id="prddisclaimer">This product is made from at least 75%<br> recycled polyester fibres
+                        </div>
+                        <div style="line-height:1.5;margin-bottom: 30px;">The Nike Pro collection is all about giving
+                            you the confidence to push past your personal goals.
+                            This slim-fitting top has a smooth and stretchy feel that suits your favourite sports and
+                            exercises.
+                            Plus, it offers a rounded hem for extra coverage or a secure feel when you tuck it into your
+                            bottoms.</div>
+                        <div style="line-height: 1.5;">
+                            <ul>
+                                <li>Colour Shown: Obsidian/White</li>
+                                <li>Style: FB7933-451</li>
+                                <li>Country/Region of Origin: Indonesia, Sri Lanka</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </div>
             <div id="productinfo">
                 <div style="font-size: 17px;font-weight: 600;color: rgb(211,71,53)">Sustainable Materials</div>
@@ -402,17 +558,18 @@
                     </button>
                 </div>
                 <div id="prddisclaimer">This product is made from at least 75%<br> recycled polyester fibres</div>
-                <div style="line-height:1.5;margin-bottom: 30px;">The Nike Pro collection is all about giving you the confidence to push past your personal goals.
+                <div style="line-height:1.5;margin-bottom: 30px;">The Nike Pro collection is all about giving you the
+                    confidence to push past your personal goals.
                     This slim-fitting top has a smooth and stretchy feel that suits your favourite sports and exercises.
                     Plus, it offers a rounded hem for extra coverage or a secure feel when you tuck it into your
                     bottoms.</div>
-                    <div style="line-height: 1.5;">
-                        <ul>
-                            <li>Colour Shown: Obsidian/White</li>
-                            <li>Style: FB7933-451</li>
-                            <li>Country/Region of Origin: Indonesia, Sri Lanka</li>
-                        </ul>
-                    </div>
+                <div style="line-height: 1.5;">
+                    <ul>
+                        <li>Colour Shown: Obsidian/White</li>
+                        <li>Style: FB7933-451</li>
+                        <li>Country/Region of Origin: Indonesia, Sri Lanka</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <hr style="margin-bottom: 50px;">

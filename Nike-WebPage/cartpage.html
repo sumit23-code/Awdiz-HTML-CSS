@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart. Nike Store</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        #mainscreen {
+            width: 100%;
+            height: 450px;
+            /* border: 2px solid black; */
+            display: flex;
+            padding: 10px;
+            /* justify-content: space-around; */
+
+        }
+
+        #cart {
+            width: 45%;
+            /* border: 1px solid red; */
+            margin-left: 15%;
+
+        }
+
+        #Summary {
+            width: 25%;
+            /* border: 1px solid red; */
+            font-family: "Roboto", sans-serif;
+        }
+
+        #cartbutton {
+            display: flex;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+
+        #cartcontent {
+            /* border: 1px solid green; */
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        #summarymobile {
+            display: none;
+        }
+        #price{
+            display: none;
+        }
+
+        @media (min-width:320px) and (max-width:720px) {
+            #summarymobile {
+                display: block;
+            }
+
+            #Summary {
+                display: none;
+            }
+            #price{
+                display: block;
+            }
+            #pricecnt{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainscreen">
+        <div id="cart">
+            <div style="font-size: 25px;margin-bottom: 20px;font-family:Roboto" , sans-serif;">Cart</div>
+            <div id="cartbutton">
+                <div id="cartimg"><img style="width: 150px; height:150px;border-radius: 5px;margin-right: 10px;"
+                        src="https://static.nike.com/a/images/t_default/41eadf7c-3ea7-4da7-b45c-961877eef5ef/AS+M+NP+DF+TIGHT+TOP+SS.png" />
+                </div>
+                <div id="cartcontent" style="font-size: 17px;">Nike Pro
+                    <div style="line-height: 1.5;color: grey;">Men's Dri-FIT Tight Short-Sleeve Fitness Top<br>
+                        Obsidian/White<br>
+                        Size <u>M</u></div>
+                    <div id="price" style="margin-top: 10px;font-weight: bold;font-family:Roboto" , sans-serif;">MRP : ₹ 1 495.00
+                    </div>
+                </div>
+                <div id="pricecnt" style="margin-left: 40px;font-weight: bold;font-family:Roboto" , sans-serif;">MRP : ₹ 1 495.00
+                </div>
+            </div>
+            <hr>
+            <div style="font-size: 30px;margin-top: 30px;font-family:Roboto" , sans-serif;">Favourites</div>
+            <div style="font-size: 18px;font-family:Roboto" , sans-serif;">There are no items saved to your favourites.
+            </div>
+            <div id="summarymobile">
+                <div style="font-size: 25px;margin-bottom: 20px;margin-top: 30px;">Summary</div>
+                <div style="margin-bottom: 10px;">Subtotal = ₹ 1 495.00</div>
+                <div style="margin-bottom: 20px;">Estimated Delivery & Handling = ₹ 1 250.00</div>
+                <hr style="margin-bottom: 20px;">
+                <div style="font-weight: bold;margin-bottom: 20px;">Total = ₹ 2 745.00</div>
+                <hr style="margin-bottom: 30px;">
+                <button style="background-color: black;
+            color: white;
+            width: 90%;
+            height: 60px;
+            cursor: pointer;
+            border: none;
+            padding:10px 20px;
+            border-radius: 70px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;">Member Checkout
+                </button>
+            </div>
+        </div>
+        <div id="Summary">
+            <div style="font-size: 25px;margin-bottom: 20px;">Summary</div>
+            <div style="margin-bottom: 10px;">Subtotal = ₹ 1 495.00</div>
+            <div style="margin-bottom: 20px;">Estimated Delivery & Handling = ₹ 1 250.00</div>
+            <hr style="margin-bottom: 20px;">
+            <div style="font-weight: bold;margin-bottom: 20px;">Total = ₹ 2 745.00</div>
+            <hr style="margin-bottom: 30px;">
+            <button style="background-color: black;
+            color: white;
+            width: 100%;
+            height: 60px;
+            cursor: pointer;
+            border: none;
+            padding:10px 20px;
+            border-radius: 70px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;">Member Checkout
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

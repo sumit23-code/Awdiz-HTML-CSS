@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Checkout</title>
+    <style>
+        #fullscreen {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #fullpage {
+            width: 30%;
+            /* border: 2px solid black; */
+            font-family: "Roboto", sans-serif;
+        }
+
+        #description {
+            font-size: 16px;
+            color: grey;
+            line-height: 1.5;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        #Card {
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 60px;
+            display: flex;
+            margin-top: 30px;
+            margin-bottom: 50px;
+
+        }
+        @media (min-width:320px) and (max-width:750px){
+            #description{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="fullscreen">
+        <div id="fullpage" style="font-size: 25px;">Delivery
+            <div id="description">Customs
+                regulation for India require a copy of the recipient's KYC. <b>The address on the KYC needs to
+                    match the shipping address. </b>The KYC will be stored securely and used solely for the purpose of
+                clearing
+                customs (including sharing it with customs officials) for all orders and returns. If your KYC does not
+                match your shipping address, please click the link for more information. Learn More</div>
+            <div style="font-size: 20px;margin-bottom: 20px;">Enter your name and address:</div>
+            <div>
+                <input
+                    style="width: 95%;height: 50px;font-size: 17px;padding: 0px 10px;border-radius: 5px;border:0.5px solid grey;"
+                    type="text" placeholder="First Name">
+            </div>
+            <div>
+                <input
+                    style="width: 95%;height: 50px;font-size: 17px;padding: 0px 10px;border-radius: 5px;margin-top: 30px;border:0.5px solid grey;"
+                    type="text" placeholder="Last Name">
+            </div>
+            <div>
+                <input
+                    style="width: 95%;height: 50px;font-size: 17px;padding: 0px 10px;border-radius: 5px;margin-top: 30px;border:0.5px solid grey;"
+                    type="text" placeholder="Apt/House Number, Street Name">
+            </div>
+            <div style="font-size: 16px;margin-top: 10px;margin-left: 5px;"><u>Enter address manually</u></div>
+            <div style="margin-top: 50px;font-size: 20px;">What's your contact information?</div>
+            <div>
+                <input
+                    style="width: 95%;height: 50px;font-size: 17px;padding: 0px 10px;border-radius: 5px;margin-top: 30px;border:0.5px solid grey;"
+                    type="text" placeholder="Email">
+            </div>
+            <div style="font-size: 12px;color: grey;margin-left: 15px;margin-top: 5px;">A confirmation email will be
+                sent after checkout.</div>
+            <div>
+                <input
+                    style="width: 95%;height: 50px;font-size: 17px;padding: 0px 10px;border-radius: 5px;margin-top: 15px;border:0.5px solid grey;"
+                    type="text" placeholder="Phone Number">
+            </div>
+            <div style="font-size: 12px;color: grey;margin-left: 15px;margin-top: 5px;margin-bottom: 40px;">A carrier
+                might contact you to confirm delivery.</div>
+            <div style="font-size: 20px;margin-bottom: 30px;">How would you like to pay?</div>
+            <div>
+                <button
+                    style="width: 100%;height: 70px;background-color: white;font-size: 18px;display: flex;align-items: center;border-radius: 10px;"><img
+                        style="margin-left: 5px;margin-right: 10px;"
+                        src="./credit_card_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" />Credit or Debit Card</button>
+            </div>
+            <div>
+                <button
+                    style="width: 100%;height: 70px;background-color: white;font-size: 18px;display: flex;align-items: center;border-radius: 10px;margin-top: 10px;border: 0.5px solid grey;"><img
+                        style="margin-left: 5px;margin-right: 10px;width: 6%;"
+                        src="./icons8-google-pay.svg" />GPay</button>
+            </div>
+            <div style="font-size: 20px;margin: 30px 0px;">Enter your payment details:</div>
+            <div>
+                <input
+                    style="width: 95%;height: 55px;font-size: 17px;padding: 0px 10px;border-radius: 5px;border:0.5px solid grey;"
+                    type="text" placeholder="Name on Card">
+            </div>
+            <div>
+                <input
+                    style="margin-top: 30px;width: 95%;height: 55px;font-size: 17px;padding: 0px 10px;border-radius: 5px;border:0.5px solid grey;"
+                    type="text" placeholder="Card Number">
+            </div>
+            <div id="Card">
+                <div><input
+                        style="width: 85%;height: 55px;font-size: 17px;padding: 0px 10px;border-radius: 5px;border:0.5px solid grey;"
+                        type="number" placeholder="MM/YY"></div>
+                <div><input
+                        style="margin-left: 10px;width: 85%;height: 55px;font-size: 17px;padding: 0px 10px;border-radius: 5px;border:0.5px solid grey;"
+                        type="number" placeholder="CVV"></div>
+            </div>
+            <div style="font-size: 13px; color: grey;margin-bottom: 50px;">By clicking Place Order, you agree to the ESW
+                <u>Terms and Conditions.</u>
+            </div>
+            <div>
+                <button style="background-color: rgb(245,245,245);
+            color: grey;
+            width: 100%;
+            height: 60px;
+            cursor: pointer;
+            border: none;
+            padding:10px 20px;
+            border-radius: 70px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;">Place Order
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
